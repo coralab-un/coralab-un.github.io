@@ -98,6 +98,11 @@ h1,h2,h3,p {
 /*Plantillas modulares*/
 /*HERO: Imagen de fondo, texto centrado, call to action*/
 
+.heroBg {
+    width: 100%;
+    background-color: var(--second-accent-color);
+}
+
 .hero {
     background-image: url(Img/Impresiones2.jpg);
     padding: 16px 14px;
