@@ -1,0 +1,168 @@
+/* CSS TUTORIAL: https://www.w3schools.com/css/default.asp */
+
+/*Definición de parámetros por defecto*/
+
+* {
+    margin: auto;
+    font-family: Orbitron, "Courier New", monospace;
+}
+
+/*Creación de variables para colores*/
+:root {
+    --main-color: whitesmoke;
+    --secondary-color: grey;
+    --accent-color:teal;
+    --second-accent-color:#324b4b;
+    --light-text-color: whitesmoke;
+    --dark-text-color: black;
+    --bgcolor: whitesmoke;
+}
+
+/*Estilización general*/
+body {
+    background-color: var(--bgcolor);
+}
+
+/*fuente oscura*/
+h1,h2,h3,p {
+    color: var(--dark-text-color);
+}
+
+
+/*Encabezado de la página*/
+.header {
+    background-color: var(--main-color);
+    padding: 2%;
+    color: var(--light-text-color);
+}
+
+.header img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    
+}
+  
+.header h1,h2 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    color:var(--accent-color);
+    
+}
+
+.header h1 {
+    font-size: 120px;
+}
+
+.header img{
+    margin-top: 20px;
+}
+
+/*Barra de navegación*/
+.topnav {
+    overflow: hidden;
+    background-color: var(--main-color);
+    padding: 0px 0px;
+
+    width: 100%;
+}
+
+.topnav a {
+    float:left;
+    color: var(--accent-color);
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 24px;
+    border-top: 4px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
+    width: 20%;
+}
+
+.topnav a.current {
+    background-color: var(--accent-color);
+    color:var(--light-text-color);
+}
+
+.topnav a:hover{
+    background-color: var(--second-accent-color);
+    color: var(--light-text-color);
+    border-top: 4px solid var(--second-accent-color);
+    border-bottom: 4px solid var(--second-accent-color);
+    
+}
+
+
+
+/*Plantillas modulares*/
+/*HERO: Imagen de fondo, texto centrado, call to action*/
+
+.hero {
+    background-image: url(Img/Impresiones2.jpg);
+    padding: 16px 14px;
+    width: 1200px;
+    height: 630px;
+    text-align: center;
+    
+}
+
+.heroText {
+    text-align: justify;
+    width: 880px;
+    padding: 40px 20px;
+    position: relative;
+    top: 80px;  
+    background-color: rgba(0, 128, 128, 0.6);
+
+}
+
+/* ListContent: lista de items con contraste entre dos tipos de contenido. PlainText_a y _b */
+.ListContent{
+    padding: 16px 14px;
+    margin-top: 10px;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--main-color);
+}
+
+li {
+    margin-top: 10px;
+}
+
+/*Pie de página con autor y referencias de la página*/
+footer {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    width: 100%;
+    padding: 16px 14px;
+    text-align: center;
+    font-size: 17px;
+}
+
+footer a {
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: underline;
+    width: 20%;
+}
+
+footer a.current {
+    color: var(--second-accent-color);
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    width: 20%;
+}
+
+footer a:hover {
+    color: var(--second-accent-color);
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: underline;
+    width: 20%;
+}
+
