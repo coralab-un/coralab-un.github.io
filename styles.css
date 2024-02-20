@@ -100,7 +100,7 @@ h1,h2,h3,p {
 
 .heroBg {
     width: 100%;
-    background-color: var(--second-accent-color);
+    background-color: #5d6d6d;
 }
 
 .hero {
@@ -249,6 +249,7 @@ footer {
     padding: 16px 14px;
     text-align: center;
     font-size: 17px;
+    height: fill;
 }
 
 footer a {
