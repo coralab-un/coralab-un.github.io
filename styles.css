@@ -104,7 +104,7 @@ h1,h2,h3,p {
     width: 1200px;
     height: 630px;
     text-align: center;
-    
+    color: var(--light-text-color);
 }
 
 .heroText {
@@ -114,7 +114,11 @@ h1,h2,h3,p {
     position: relative;
     top: 80px;  
     background-color: rgba(0, 128, 128, 0.6);
+    color: var(--light-text-color);
+}
 
+.hero h1 {
+    color:var(--light-text-color);
 }
 
 /* ListContent: lista de items con contraste entre dos tipos de contenido. PlainText_a y _b */
@@ -128,8 +132,25 @@ h1,h2,h3,p {
     background-color: var(--main-color);
 }
 
-li {
+/* se ajusta que todo elemento de una lista tenga un espaciado de 10px */
+.ListContent li {
     margin-top: 10px;
+}
+
+/* PeopleGallery: Galería de personas con foto, nombre y cargo. Emplea el uso de grid containers */
+.PeopleGallery {
+    display: grid;
+    gap: 50px;
+    margin: 20px
+}
+
+.People {
+    display: inline-grid;
+    gap: 10px;
+    border: 2px solid var(--second-accent-color);
+    width: 20%;
+    height: 300px;
+    padding: 20px 10px;
 }
 
 /*Pie de página con autor y referencias de la página*/
@@ -148,6 +169,7 @@ footer a {
     padding: 14px 0px;
     text-decoration: underline;
     width: 20%;
+    height: auto;
 }
 
 footer a.current {
@@ -166,3 +188,6 @@ footer a:hover {
     width: 20%;
 }
 
+footer h6{
+    font-size: small;
+}
