@@ -264,6 +264,10 @@ a:hover {
     margin-left: 20px;
 }
 
+.Content div {
+    width: 70%;
+}
+
 /* Left y RightContent: Posiciona contenido a la izquierda o derecha */
 .LeftContent {
     flex:50%;
