@@ -231,6 +231,18 @@ a:hover {
     grid-row: 2;
 }
 
+.People7 {
+    display: inline-grid;
+    gap: 10px;
+    border: 4px solid var(--second-accent-color);
+    width: 400px;
+    height: auto;
+    padding: 20px 10px;
+
+    grid-column: 2;
+    grid-row: 3;
+}
+
 .PeoplePic {
     grid-row:1;
     grid-column: 1;
