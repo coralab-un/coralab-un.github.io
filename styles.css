@@ -299,13 +299,15 @@ a:hover {
 /* Left y RightContent: Posiciona contenido a la izquierda o derecha */
 .LeftContent {
     flex:50%;
+    flex-wrap: wrap;
     padding: 10px 20px;
     text-align: justify;
     align-items: top;
     height: auto;
     margin-top: 10px;
+    margin-left: 10px;
     margin-right: 40px;
-    min-width: 400px;
+    min-width: 600px;
 }
 
 
