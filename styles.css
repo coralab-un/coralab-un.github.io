@@ -102,6 +102,16 @@ a:hover {
     
 }
 
+.LocalNav ul {
+    display: flex;
+}
+.LocalNav li {
+    display: inline-flex;
+    text-decoration: underline;
+    color:var(--accent-color);
+    border: var(--accent-color);
+    padding: 10px;
+}
 
 
 /*Plantillas modulares*/
