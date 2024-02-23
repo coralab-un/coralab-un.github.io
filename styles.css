@@ -175,6 +175,7 @@ a:hover {
     text-align: center;
 }
 
+/* Se asigna una posición en el grid a cada persona hasta 9 personas */
 .People1 {
     display: inline-grid;
     gap: 10px;
@@ -255,7 +256,31 @@ a:hover {
     height: auto;
     padding: 20px 10px;
 
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.People8 {
+    display: inline-grid;
+    gap: 10px;
+    border: 4px solid var(--accent-color);
+    width: 400px;
+    height: auto;
+    padding: 20px 10px;
+
     grid-column: 2;
+    grid-row: 3;
+}
+
+.People9 {
+    display: inline-grid;
+    gap: 10px;
+    border: 4px solid var(--accent-color);
+    width: 400px;
+    height: auto;
+    padding: 20px 10px;
+
+    grid-column: 3;
     grid-row: 3;
 }
 
