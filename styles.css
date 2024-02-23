@@ -146,8 +146,14 @@ a:hover {
 /* se ajusta que todo elemento de una lista tenga un espaciado de 10px */
 .ListContent li {
     margin-top: 10px;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: larger;
+}
+
+.ListContent p {
+    margin-top: 10px;
+    text-decoration: none;
+    
 }
 
 /* PeopleGallery: Galería de personas con foto, nombre y cargo. Emplea el uso de grid containers */
@@ -289,15 +295,22 @@ a:hover {
     height: auto;
     margin-top: 10px;
     margin-right: 40px;
+    min-width: 400px;
 }
 
 
 .RightContent {
-    /* margin-left: 45%;
-    width: 40%; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    /* margin-left: 45%; */
+    width: min-content;
     padding: 2px 2px;
     flex: 30%;
-    border: 4px solid var(--accent-color);
+    /* min-width: 400px; */
+    /* border: 4px solid var(--accent-color); */
+    margin-right: 10px;
+    justify-content: flex-start;
 }
 
 /* Reference: Estiliza vínculos de referencias y citas */
