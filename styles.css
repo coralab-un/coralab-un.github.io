@@ -313,6 +313,20 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Center content, contenido a una columna, centrado */
+.CenterContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.CenterContent p {
+    font-size: larger;
+    margin-top: 25px;
+}
+
 .Content p{
     margin-left: 20px;
 }
