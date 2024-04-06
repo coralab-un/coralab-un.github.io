@@ -5,6 +5,7 @@
 * {
     margin: auto;
     font-family: Orbitron, "Courier New", monospace;
+    box-sizing: border-box;
 }
 
 /*Creación de variables para colores*/
@@ -74,7 +75,7 @@ a:hover {
     background-color: var(--main-color);
     padding: 0px 0px;
 
-    width: 100%;
+    /* width: 100%; */
 }
 
 .topnav a {
@@ -118,14 +119,14 @@ a:hover {
 /*HERO: Imagen de fondo, texto centrado, call to action*/
 
 .heroBg {
-    width: 100%;
+    /* width: 100%; */
     background-color: #5d6d6d;
 }
 
 .hero {
     background-image: url(Img/Impresiones2.jpg);
     padding: 16px 14px;
-    width: 1200px;
+    /* width: 1200px; */
     height: 630px;
     text-align: center;
     color: var(--light-text-color);
@@ -133,7 +134,7 @@ a:hover {
 
 .heroText {
     text-align: justify;
-    width: 880px;
+    /* width: 880px; */
     padding: 40px 20px;
     position: relative;
     top: 80px;  
@@ -408,4 +409,65 @@ footer a:hover {
 
 footer h6{
     font-size: small;
+}
+
+
+/* Creación de media querys para rwd */
+/* tamaños: small (800px), medium 800-1200px, large >1200px */
+/* Considerando que el sitio se diseñó primero para escritorio, se usaran sentencias max-width descendiendo a tamaños más pequeños */
+/* Se usará un contenedor que ajuste el tamaño automáticamente para que toda la página responda bien a los diferentes valores intermedios */
+/* Container, clase miscelanea para alinear todos los contenedores de la página y depender de menos media querys para poder hacer un buen RWD */
+/* Mas información en: https://youtu.be/K24lUqcT0Ms?si=rcUcGAj5Ywk9QDQs */
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* L: pantallas de más de 1200px */
+@media (max-width:1400px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* M: pantallas entre 800px y 1200px */
+@media (max-width:1200px){
+    .container{
+        max-width: 1024px;
+    }
+    .topnav{
+        position: fixed;
+        width: 200px;
+        padding: 3px 4px 3px 3px;
+        margin-top: 4px;
+        margin-left: -60%;
+        transition: all 0.5s;
+    }
+    .header img{
+        height: 80px;
+        width: 80px;
+    }
+    .header h1 {
+        font-size: 80px;
+    }
+
+}
+
+/* S: pantallas de menos de 800px */
+@media (max-width:800px){
+    .container{
+        max-width: 720px;
+    }
+    .header img{
+        height: 60px;
+        width: 60px;
+    }
+    .header h1 {
+        font-size: 60px;
+    }
+
 }
