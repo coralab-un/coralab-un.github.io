@@ -181,117 +181,21 @@ a:hover {
 /* PeopleGallery: Galería de personas con foto, nombre y cargo. Emplea el uso de grid containers */
 .PeopleGallery {
     display: grid;
-    gap: 5%;
+    row-gap: 20px;
     margin: 20px 0px;
     text-align: center;
     grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
 }
 
-/* Se asigna una posición en el grid a cada persona hasta 9 personas */
-.People1 {
+/* Se asigna una posición en el grid a cada persona con el atributo span */
+.People {
     display: inline-grid;
     border: 4px solid var(--accent-color);
-    height: auto;
+    height: 500px;
     padding: 20px 10px;
-
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.People2 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.People3 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.People4 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.People5 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.People6 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.People7 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.People8 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.People9 {
-    display: inline-grid;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    width: 30%;
-    height: auto;
-    padding: 20px 10px;
-
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .PeoplePic {
@@ -533,6 +437,16 @@ footer h6{
         color:var(--light-text-color);
     }
     
+    .PeopleGallery {
+        grid-template-columns: 40% 40%;
+        row-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .People {
+        width: max-content;
+        height: max-content;
+    }
 }
 
 /* S: pantallas de menos de 800px */
@@ -553,6 +467,17 @@ footer h6{
     }
     .header h1 {
         font-size: 60px;
+    }
+
+    .PeopleGallery {
+        grid-template-columns: 60%;
+        row-gap: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .People {
+        width: 100%;
     }
 
 }
