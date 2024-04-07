@@ -6,7 +6,7 @@
     margin: auto;
     font-family: Orbitron, "Courier New", monospace;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    /* border: 1px solid red;   */
 }
 
 /*Creación de variables para colores*/
@@ -222,6 +222,7 @@ a:hover {
 .Content {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
     justify-content: center;
     margin: auto;
@@ -294,6 +295,8 @@ footer {
     text-align: center;
     font-size: 17px;
     height: fill;
+
+    margin-top: 20px;
 }
 
 footer a {
