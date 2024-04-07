@@ -6,6 +6,7 @@
     margin: auto;
     font-family: Orbitron, "Courier New", monospace;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 /*Creación de variables para colores*/
@@ -41,23 +42,28 @@ a:hover {
 
 /*Encabezado de la página*/
 .header {
+    
     background-color: var(--main-color);
     padding: 2%;
-    color: var(--light-text-color);
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .header img {
-    float: left;
+    justify-content: flex-start;
     width: 120px;
     height: 120px;
-    
+    margin-top: 10px;
 }
   
 .header h1,h2 {
-    position: relative;
+    justify-content: flex-start;
     top: 18px;
     left: 10px;
     color:var(--accent-color);
+    
     
 }
 
@@ -65,9 +71,6 @@ a:hover {
     font-size: 120px;
 }
 
-.header img{
-    margin-top: 20px;
-}
 
 /*Barra de navegación*/
 .topnav {
@@ -101,6 +104,14 @@ a:hover {
     border-top: 4px solid var(--second-accent-color);
     border-bottom: 4px solid var(--second-accent-color);
     
+}
+
+.topnav_dropdown{
+    display: none;
+}
+
+.dropMenu {
+    display: none;
 }
 
 .LocalNav ul {
@@ -375,7 +386,7 @@ a:hover {
 footer {
     background-color: var(--accent-color);
     color: var(--light-text-color);
-    width: 100%;
+    /* width: 100%; */
     padding: 16px 14px;
     text-align: center;
     font-size: 17px;
@@ -440,12 +451,22 @@ footer h6{
         max-width: 1024px;
     }
     .topnav{
-        position: fixed;
-        width: 200px;
-        padding: 3px 4px 3px 3px;
-        margin-top: 4px;
-        margin-left: -60%;
-        transition: all 0.5s;
+        display: none;
+    }
+    .dropMenu{
+        display: inline;
+        cursor: pointer;
+        border: none;
+    }
+    .dropMenu img{
+        height: 80px;
+    }
+    .header {        
+        height: 100px;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        
     }
     .header img{
         height: 80px;
@@ -455,12 +476,31 @@ footer h6{
         font-size: 80px;
     }
 
+    .dropMenu:checked  .topnav_dropdown {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        background-color: var(--second-accent-color);
+
+    }
+
+    .topnav_dropdown a {
+        color: var(--light-text-color);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 /* S: pantallas de menos de 800px */
 @media (max-width:800px){
     .container{
         max-width: 720px;
+    }
+    .header {        
+        height: 60px;
+        padding-top: 0px;
+        margin-top: 0px;
+        
     }
     .header img{
         height: 60px;
