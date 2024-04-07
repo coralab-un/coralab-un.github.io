@@ -248,7 +248,7 @@ a:hover {
 }
 
 .Content div {
-    width: 70%;
+    width: 100%;
 }
 
 /* Left y RightContent: Posiciona contenido a la izquierda o derecha */
@@ -463,6 +463,10 @@ footer h6{
     .People {
         width: max-content;
         height: max-content;
+    }
+
+    .People h3{
+        font-size: medium;
     }
 
     .Content {
