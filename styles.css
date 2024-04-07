@@ -114,6 +114,11 @@ a:hover {
     display: none;
 }
 
+.LocalNav {
+    border-bottom: 1px var(--accent-color) solid;
+    margin: 10px 0px;
+}
+
 .LocalNav ul {
     display: flex;
 }
@@ -279,6 +284,56 @@ a:hover {
     margin-right: 10px;
     justify-content: flex-start;
 }
+
+/* Content class */
+/* ContentGrid: permite acomodar la página empleando un sistema de rejilla */
+.ContentGrid {
+    display: grid;
+    grid-template-columns: 20% auto 50%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.Content {
+    margin-top:20px;
+}
+
+.item1 {
+    grid-column: 1;
+    margin-bottom: 10px;
+}
+
+.item2 {
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.item3 {
+    grid-row: 2;
+    grid-column: 3;
+    padding: 0px 10px 30px 20px;
+    margin-top: 0px;
+    font-size: large;
+}
+
+.item4 {
+    grid-row: 3;
+    text-wrap: none;
+    
+}
+
+.item5 {
+    grid-row: 5;
+    grid-column: span 2;
+    text-wrap: none;
+}
+
+.item6 {
+    grid-row: 5;
+    grid-column: 3;
+    text-wrap: none;
+}
+
 
 /* Reference: Estiliza vínculos de referencias y citas */
 .Reference {
@@ -479,6 +534,15 @@ footer h6{
         align-content: space-evenly;
     }
 
+    .ContentGrid {
+        grid-template-columns: 100%;
+        
+    }
+
+    .Content {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 
 
 }
