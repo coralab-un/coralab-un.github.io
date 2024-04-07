@@ -221,11 +221,10 @@ a:hover {
 /* Content: Contiene dos subclases para dividir el contenido en dos columnas */
 .Content {
     width: 100%;
-    margin-left: 10px;
     display: flex;
     align-items: stretch;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin: auto;
 }
 
 /* Center content, contenido a una columna, centrado */
@@ -462,6 +461,19 @@ footer h6{
         width: max-content;
         height: max-content;
     }
+
+    .Content {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        padding: 10px 0px;
+
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+
+
 }
 
 /* S: pantallas de menos de 800px */
@@ -495,6 +507,14 @@ footer h6{
         width: 100%;
     }
 
-    
+    .Content {
+        margin: auto;
+    }
+
+    .Content img{
+        
+        width: 80%;
+        height: auto;
+    }
 
 }
