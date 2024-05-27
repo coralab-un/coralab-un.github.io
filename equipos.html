@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="MapaInteractivo.js"></script>
     <title>Coralab - Ubicación</title>
 </head>
 
@@ -45,12 +46,24 @@
 
 <body>
     <div class="container">
-        <div class="CenterContent">
+        <div class="MapaInteractivo">
+            <!-- Imagen de fondo para el mapa interactivo -->
+            <img class="Mapa" src="Img/Oficina.jpg" width="100%">
             
+            <!-- Marcadores para acceder a la informacion -->
+        
+            <a href="#Info" target="_self"><img class="mapBtn Makerbot" onclick="Makerbot()" src="Img/Marker.svg" alt="Impresora Makerbot"></a>
+            <a href="#Info" target="_self"><img class="mapBtn Kingroon" onclick="Kingroon()" src="Img/Marker.svg" alt="Impresora Kingroon"></a>
+            <a href="#Info" target="_self"><img class="mapBtn Kobra" onclick="Kobra()" src="Img/Marker.svg" alt="Impresora Kobra 2"></a>
+            <a href="#Info" target="_self"><img class="mapBtn Cheems" onclick="Cheems()" src="Img/Marker.svg" alt="Modelos de prueba"></a>
+            <a href="#Info" target="_self"><img class="mapBtn Slicer" onclick="Slicer()" src="Img/Marker.svg" alt="Computador con Slicer"></a>          
+        </div>
+        <div id="Info">
+                
         </div>
     </div>
-    
 </body>
+
 <div class="container">
     <footer>
     

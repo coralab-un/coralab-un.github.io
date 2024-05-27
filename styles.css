@@ -594,3 +594,71 @@ footer h6{
     }
 
 }
+
+/* Creación de tags para mapa interactivo */
+
+.MapaInteractivo{
+    position: relative;
+    font-size: 1.5em;
+    color: var(--dark-text-color);
+    display: block;
+}
+
+.Mapa {
+    width: 100%;
+    display: block;
+    margin:auto;
+}
+
+/* Propiedades generales de los botones */
+.mapBtn{
+    position: absolute;
+    z-index: 2;
+    width: 2.6%;
+}
+
+.mapBtn:hover{
+    width: 3%;
+}
+
+/* Marcadores */
+.Makerbot {
+    bottom: 40%;
+    left: 10%;
+}
+
+.Kingroon {
+    bottom: 43%;
+    left: 86%;
+}
+
+.Kobra {
+    bottom: 69%;
+    left: 75%;
+}
+
+.Cheems {
+    bottom: 82%;
+    left: 35%;
+}
+
+.Slicer {
+    bottom: 65%;
+    left: 34%;
+}
+
+/* Imagen de explicación para los elementos del mapa interactivo */
+.imgM {
+    max-width: 20%;
+    margin: 2%;
+    border: 1px solid var(--accent-color);
+    box-shadow: 1px 1px 4px var(--second-accent-color);
+}
+
+/* Estilización de contenido */
+#Info {
+    display: flex;
+    margin:auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
