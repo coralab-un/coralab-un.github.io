@@ -8,6 +8,9 @@
     box-sizing: border-box;
     /* border: 1px solid red;   */
 }
+/* .container{
+    border: 1px solid red;  
+} */
 
 /*Creación de variables para colores*/
 :root {
@@ -77,12 +80,14 @@ a:hover {
     overflow: hidden;
     background-color: var(--main-color);
     padding: 0px 0px;
-
+    display: flex;
+    flex-direction: row;
+    height: 60px;
     /* width: 100%; */
 }
 
 .topnav a {
-    float:left;
+
     color: var(--accent-color);
     text-align: center;
     padding: 14px 0px;
@@ -90,7 +95,7 @@ a:hover {
     font-size: 20px;
     border-top: 4px solid var(--accent-color);
     border-bottom: 4px solid var(--accent-color);
-    width: 14%;
+    width: 17%;
 }
 
 .topnav a.current {
